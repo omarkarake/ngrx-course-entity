@@ -15,7 +15,6 @@ export class AuthService {
 
     login(email:string, password:string): Observable<User> {
         return this.http.post<User>('/api/login', {email,password});
-        //auth the raouter
     }
 
 }
